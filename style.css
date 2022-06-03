@@ -32,7 +32,7 @@ nav {
   padding-top: 10px;
 }
 
-.griditems {
+section {
   display: grid;
   width: 100%;
   align-items: center;
@@ -51,7 +51,6 @@ nav {
   font-family: "Poppins", sans-serif;
   background-image: url("images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
-  background-color: blue;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -97,6 +96,13 @@ nav {
   padding: 20px 30px 50px 20px;
 }
 
+.works-detail .main-topic {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 44px;
+}
+
 .works-intro {
   display: flex;
   flex-direction: rows;
@@ -113,9 +119,10 @@ nav {
   flex-direction: row;
   list-style: none;
   padding-left: 0;
+  padding-right: 150px;
 }
 
-.works-intro h1 {
+.works-intro h2 {
   padding-left: 0;
   margin-left: 0;
 }
@@ -155,8 +162,8 @@ nav {
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-  border-radius: 15px;
-  width: 200px;
+  border-radius: 10px;
+  width: 150px;
   height: 50px;
   border: 1px solid blue;
 }
@@ -168,6 +175,20 @@ nav {
   justify-content: space-between;
   padding: 10px 20px 10px 20px;
   font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+button:active {
+  background-color: darkblue;
+}
+
+button:disabled {
+  border: 1px solid #999;
+  background-color: #ccc;
+  color: #666;
 }
 
 .aboutme .aboutme-box button {
